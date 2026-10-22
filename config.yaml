@@ -1,0 +1,34 @@
+# SQL Guardian Configuration
+
+# Analysis Settings
+analysis:
+  use_ai: true
+  ai_model: "deepseek-coder:6.7b"
+  max_context_lines: 5
+
+# Rules Configuration
+rules:
+  select_star: 
+    enabled: true
+    severity: WARNING
+  
+  nocount:
+    enabled: true
+    severity: INFO
+  
+  non_sargable:
+    enabled: true
+    severity: WARNING
+  
+  cursor:
+    enabled: true
+    severity: WARNING
+  
+  nolock:
+    enabled: true
+    severity: WARNING
+
+# Output Settings
+output:
+  show_ai_explanations: true
+  colorize: true

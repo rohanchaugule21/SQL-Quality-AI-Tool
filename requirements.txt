@@ -1,0 +1,16 @@
+# SQL Quality AI Tool - Dependencies
+
+# Core Analysis
+sqlparse==0.4.4
+pyodbc==5.0.1
+
+# AI/LLM
+requests>=2.31.0
+
+# Dashboard
+streamlit>=1.29.0
+plotly>=5.18.0
+
+# Utilities
+pyyaml>=6.0.1
+python-dotenv>=1.0.0
